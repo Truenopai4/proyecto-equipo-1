@@ -3,23 +3,23 @@
 // Declaración de la clase Urvan
 class Urvan {
     // Propiedades que representan las características del automóvil Urvan
-    public $marca; // Marca del automóvil
-    public $modelo; // Modelo del automóvil
-    public $ano; // Año de fabricación del automóvil
-    public $color; // Color del automóvil
-    public $transmision; // Tipo de transmisión (manual, automática, etc.)
-    public $motor; // Tipo y tamaño del motor
-    public $cilindros; // Cantidad de cilindros del motor
-    public $potencia; // Potencia del motor
-    public $combustible; // Tipo de combustible que utiliza el automóvil
-    public $asientos; // Cantidad de asientos del automóvil
-    public $puertas; // Cantidad de puertas del automóvil
-    public $capacidad; // Capacidad de pasajeros de la combi
-    public $aireAcondicionado; // Presencia de aire acondicionado
-    public $dimensiones; // Dimensiones del vehículo
-    public $precio; // Precio de venta del automóvil
-    public $seguridad; // Nivel de seguridad del automóvil
-    public $tecnologia; // Tecnología integrada en el automóvil
+    public $marca; // string
+    public $modelo; // string
+    public $ano; // int (año de fabricación)
+    public $color; // string
+    public $transmision; // string
+    public $motor; // string
+    public $cilindros; // int
+    public $potencia; // double
+    public $combustible; // string
+    public $asientos; // int
+    public $puertas; // int
+    public $capacidad; // int (capacidad de pasajeros de la combi)
+    public $aireAcondicionado; // bool (presencia de aire acondicionado)
+    public $dimensiones; // string
+    public $precio; // double
+    public $seguridad; // string
+    public $tecnologia; // string
 
     // Constructor de la clase Urvan que inicializa las propiedades con valores específicos
     public function __construct($marca, $modelo, $ano, $color, $transmision, $motor, $cilindros, $potencia, $combustible, $asientos, $puertas, $capacidad, $aireAcondicionado, $dimensiones, $precio, $seguridad, $tecnologia) {
@@ -44,7 +44,7 @@ class Urvan {
 }
 
 // Crear un objeto Urvan con valores específicos para sus propiedades
-$urvan = new Urvan("Nissan", "Urvan", 2010, "Blanco", "Manual", "2.5L", 4, "140 HP", "Diesel", 10, 4, 15, true, "4.9m x 1.9m x 2.2m", "$200,000", "Básica", "Básica");
+$urvan = new Urvan("Nissan", "Urvan", 2010, "Blanco", "Manual", "2.5L", 4, 140.5, "Diesel", 10, 4, 15, true, "4.9m x 1.9m x 2.2m", 200000.50, "Básica", "Básica");
 
 // Acceder a las propiedades del objeto e imprimir su valor
 echo "Marca: " . $urvan->marca . "\n";
